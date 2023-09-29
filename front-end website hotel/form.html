@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a6f67c27c5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="formbook.css">
+
+    <title>Form Booking</title>
+  </head>
+
+  <body id="page-booking">
+
+  <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container flex_space">
+    <a class="navbar-brand" href="#page-top">Xxx Hotel</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link js-scroll-trigger" href="#Detail">Detail <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact_us">Contact Us</a>
+        </li>
+        <li>
+          <i class="fa-2x fa-solid fa-bell ml-3 mt-1"></i>
+        </li>
+        <li>
+          <i class="fa-2x fa-solid fa-circle-user ml-3 mt-1"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <!-- navbar -->
+
+<!-- form booking --> 
+
+  <div class="booking-form">
+      <h2>Reservation Form</h2>
+      <form method="POST" action="hasilform.php">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Full Name" required><br>
+
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="example@gmail.com" required><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="text"  class="form-control" id="phone" placeholder="+62-xxx-xxx" required><br>
+
+        <label for="check-in">Check-In Date</label>
+        <input type="date"  class="form-control" id="check-in" required><br>
+
+        <label for="check-out">Check-Out Date</label>
+        <input type="date"  class="form-control" id="check-out" required><br>
+
+        <label for="formGroupExampleInput">Room Preference</label>
+        <select class="form-control" id="product">
+              <option value="" disabled selected>Choose Room</option>
+              <option value="Sweet Room">Sweet Room $223/night</option>
+              <option value="Twin Room">Twin Room $233/night</option>
+              <option value="President Room">President Room $323/night</option>
+              <option value="Couple Room">Couple Room $376/night</option>
+            </select><br>
+
+        <label for="formGroupExampleInput2">Room Price</label>
+        <input type="number" class="form-control" id="prc" placeholder="input price in room preference without $" ><br>
+
+
+        <label for="formGroupExampleInput2">Total Night</label>
+        <input type="number" class="form-control" id="qty" onchange="calculate()"><br>
+
+        <label for="formGroupExampleInput2">Amount</label>
+        <input type="number"  class="form-control" id="amnt" disabled><br>
+
+        <button type="button" onclick="addData()">Book Now</button>
+      </form>
+  </div>
+ <!-- form booking -->  
+<!-- invoice Order --> 
+  <div class="invoice">
+    <h1>Invoice Order</h1>
+    <table class="table">
+      <thead id="tablehead">
+        <tr>
+          <th id="product">Room Name</th>
+          <th>Price</th>
+          <th>Total Night</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="newtr">
+
+    </tbody>
+    </table>
+  <hr>
+
+
+
+<!-- invoice Order --> 
+<!-- script invoice order --> 
+  <script>
+    var Price;
+    var quantity;
+    var amount;
+    var room_name;
+ 
+    function calculate() {
+      Price = document.getElementById("prc").value;
+      quantity = document.getElementById("qty").value;
+      amount = Price * quantity;
+      document.getElementById("amnt").value = amount;
+    }
+
+
+    function addData() {
+      room_name = document.getElementById("product").value;
+      document.getElementById('newtr').innerHTML += '<tr><td>' + room_name + '</td><td>' + Price + '</td> <td>' + quantity + '</td><td>' + amount + '</td></tr>'
+      document.getElementById("product").value = "";
+      document.getElementById("prc").value = "";
+      document.getElementById("qty").value = "";
+      document.getElementById("amnt").value = "";
+    }
+
+  </script>
+<!-- script invoice order --> 
+
+     <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

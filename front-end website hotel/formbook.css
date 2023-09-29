@@ -1,0 +1,62 @@
+head,html{
+	font-family: 'Poppins', sans-serif;
+}
+
+body,html{
+	font-family: 'Poppins', sans-serif;
+	background-image: url('bg.jpeg');
+	background-size: cover;
+	background-position:center ;
+	height:100%
+	align-items: center;
+	justify-content: center;
+}
+.navbar {
+    position: center;
+}
+/*-----form-----*/
+
+.booking-form{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+	width: 500px;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.booking-form h2{
+	text-align: center;
+}
+.booking-form form{
+	display: flex;
+	flex-direction: column;
+}
+.booking-form input{
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.booking-form button{
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #E3B104;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	
+}
+.booking-form button:hover{
+	background-color:black;
+	color:#E3B104;
+}
+.invoice{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+	width: 750px;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.invoice h1{
+	text-align: ;
+}

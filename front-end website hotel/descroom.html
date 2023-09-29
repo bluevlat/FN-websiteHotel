@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a6f67c27c5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="descroom.css">
+
+    <title>Desc Room</title>
+  </head>
+
+  <body id="page-rooms">
+
+  <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container flex_space">
+    <a class="navbar-brand" href="#page-top">Xxx Hotel</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link js-scroll-trigger" href="#Detail">Detail <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact_us">Contact Us</a>
+        </li>
+        <li>
+          <i class="fa-2x fa-solid fa-bell ml-3 mt-1"></i>
+        </li>
+        <li>
+          <i class="fa-2x fa-solid fa-circle-user ml-3 mt-1"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+   <!-- navbar -->
+
+  <!-- jumbotron room -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Room Details</h1>
+  </div>
+</div>
+<!-- jumbotron room -->
+
+<!-- detail room (sweet room)-->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-5 mt-5 mb-5">
+          <div class="heading">
+            <h1>RoomDetails</h1>
+            <h2>Sweet Room</h2>
+          </div>
+            <p>A sweet room is a category of a standard room. Typically, a basic hotel room with standard amenities. It typically includes a comfortable bed, a private bathroom, and basic furnishings.</p>
+            <h3>Room Feature</h3>
+            <i class="fa-solid fa-tv"></i>
+            <label>TV</label>
+            <i class="fa-solid fa-bed"></i>
+            <label>One Bed</label>
+            <i class="fa-solid fa-shower"></i>
+            <label>Heather</label><br>
+            <i class="fa-solid fa-couch"></i>
+            <label>Sofa</label>
+            <i class="fa-solid fa-person"></i>
+            <label>2 Adults</label>
+            <i class="fa-solid fa-bath"></i>
+            <label>Bathub</label><br>
+            <i class="fa-solid fa-utensils"></i>
+            <label>Including Breakfast</label>
+            <h4>$223 <span> <br> Per Night </span></h4>
+            <button class="btn btn-outline-dark" onclick="addData()">Book Now</button>
+        </div>
+        <div class="col-sm-7 mt-5">
+          <img src="sweetroom.jpeg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+<!-- detail room (twin room)-->
+<div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-7 mt-5">
+          <img src="twinroom.jpeg" class="img-fluid" alt="">
+        </div>
+        <div class="col-sm-5 mt-5 mb-5">
+          <div class="heading">
+            <h1>RoomDetails</h1>
+            <h2>Twin Room</h2>
+          </div>
+            <p>A twin room is a hotel room with two separate beds, typically single beds. It's a good choice for guests traveling with friends or colleagues who prefer to sleep separately.</p>
+            <h3>Room Feature</h3>
+            <i class="fa-solid fa-tv"></i>
+            <label>TV</label>
+            <i class="fa-solid fa-bed"></i>
+            <label>2 Bed</label>
+            <i class="fa-solid fa-shower"></i>
+            <label>Heather</label><br>
+            <i class="fa-solid fa-couch"></i>
+            <label>Sofa</label>
+            <i class="fa-solid fa-person"></i>
+            <label>2 Adults</label>
+            <i class="fa-solid fa-bath"></i>
+            <label>Bathub</label><br>
+            <i class="fa-solid fa-utensils"></i>
+            <label>Including Breakfast</label>
+            <h4>$233 <span> <br> Per Night </span></h4>
+            <button class="btn btn-outline-dark">Book Now</button>
+        </div>
+      </div>
+    </div>
+<!-- detail room (president room)-->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-5 mt-5 mb-5">
+          <div class="heading">
+            <h1>RoomDetails</h1>
+            <h2>President Room</h2>
+          </div>
+            <p>A presidential room is the most luxurious and exclusive category of hotel room. It typically features multiple bedrooms, a large living room, luxury amenities such as a private dining room, butler service, and opulent interior decor.</p>
+            <h3>Room Feature</h3>
+            <i class="fa-solid fa-tv"></i>
+            <label>TV</label>
+            <i class="fa-solid fa-bed"></i>
+            <label>One Bed</label>
+            <i class="fa-solid fa-shower"></i>
+            <label>Heather</label><br>
+            <i class="fa-solid fa-couch"></i>
+            <label>Sofa</label>
+            <i class="fa-solid fa-person"></i>
+            <label>2 Adults</label>
+            <i class="fa-solid fa-bath"></i>
+            <label>Bathub</label><br>
+            <i class="fa-solid fa-utensils"></i>
+            <label>Including Breakfast</label>
+            <h4>$323 <span> <br> Per Night </span></h4>
+            <button class="btn btn-outline-dark">Book Now</button>
+        </div>
+        <div class="col-sm-7 mt-5">
+          <img src="presidentroom.jpeg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+<!-- detail room (couple room)-->
+<div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-7 mt-5 mb-5">
+          <img src="coupleroom.jpeg" class="img-fluid" alt="">
+        </div>
+        <div class="col-sm-5 mt-5 mb-5">
+          <div class="heading">
+            <h1>RoomDetails</h1>
+            <h2>Couple Room</h2>
+          </div>
+            <p>A couple room, also known as a honeymoon suite, is specially designed for couples celebrating their honeymoon or a romantic getaway. It usually features romantic decor, amenities like a soaking tub, and beautiful views.</p>
+            <h3>Room Feature</h3>
+            <i class="fa-solid fa-tv"></i>
+            <label>TV</label>
+            <i class="fa-solid fa-bed"></i>
+            <label>One Bed</label>
+            <i class="fa-solid fa-shower"></i>
+            <label>Heather</label><br>
+            <i class="fa-solid fa-couch"></i>
+            <label>Sofa</label>
+            <i class="fa-solid fa-person"></i>
+            <label>2 Adults</label>
+            <i class="fa-solid fa-bath"></i>
+            <label>Bathub</label><br>
+            <i class="fa-solid fa-utensils"></i>
+            <label>Including Breakfast</label>
+            <h4>$376 <span> <br> Per Night </span></h4>
+            <button class="btn btn-outline-dark">Book Now</button>
+        </div>
+      </div>
+    </div>
+<!-- detail room -->
+
+<!-- book room -->
+   <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1><span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Adults">
+          <input type="text" placeholder="Rooms Type">
+          <button1 class="btn btn-warning">Book Room</button1>
+        </form>
+      </div>
+    </div>
+  </section>
+<!-- book room -->
+
+     <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
